@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Mohave:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+#Entretenimiento h1, h2, b{
+    font-family: 'Baskervville', sans-serif;
+}
+#carousel figure figcaption{
+    font-size: 30px;
+    font-family: 'Mohave', sans-serif;
+}
+body {
+    background-image: url(../img/background/background3.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /*fija la imagen de fondo para que no se desplace con el contenido */
+}
+
+
+nav{
+    
+    margin-bottom: 150px;
+  
+}
+
+
+.section-carousel{
+    margin-bottom: 380px;
+}
+
+.contenedor3d{
+  margin: 4% auto;
+  width: 240px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+  
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 70s infinite linear;
+}
+
+#carousel:hover {
+  animation-play-state: paused;
+}
+
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 135px;
+  left: 10px;
+  top: 10px;
+  background: black;
+}
+
+#carousel{
+    width: 80%;
+    height: 80%;
+}
+#carousel figure img{
+    width: 300px;       /*configuramos los pixeles de las imagenes */
+    height: 200px;
+    border: solid 1px black;
+}
+
+#carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(500px);
+}
+
+#carousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(500px);
+}
+
+#carousel img {
+  filter: grayscale(100%); 
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+#carousel figcaption{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#carousel img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+/* Css Etretenimiento */
+
+#Entretenimiento:hover{
+    box-shadow: 0 0 50px #000;
+    backdrop-filter: blur(50px);
+}
+ #Entretenimiento{
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+#Entretenimiento img{
+    width: 500px;
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+#Entretenimiento h1{
+    color: #FFFFFF;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+#Entretenimiento p{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Baskervville', sans-serif;
+}
+
+#Entretenimiento a{
+    padding: 14px 40px;
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700px;
+    text-decoration: none;
+    display:block;
+    max-width: 150px;
+    text-align: center;
+    transition: .5s;
+}
+
+#Entretenimiento a:hover{
+    background: #000000;
+    border-radius: 20px;
+    max-width: 180px;
+} 
+
+#carouselHeroCaptions{
+    margin-top: 60px;
+    
+}
+
+#carouselHeroCaptions h5{
+    padding: 10px;
+    border-radius: 8px;
+    background: #00000070; 
+}
+
+#Entretenimiento .carousel-inner, .carousel-item img{
+    width: 642px;
+    height: 450px;
+}
+
+#Entretenimiento{
+    margin-bottom: 150px;
+}
+
+/*Css carta*/
+#carta:hover{
+    box-shadow: 0 0 50px #000;
+    backdrop-filter: blur(50px);
+}
+
+#carta{
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 150px;
+}
+
+#carta h2{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    display:inline-block;
+    margin-bottom: 80px;
+}
+
+#carta h2{
+    font-size: 54px;
+}
+#carta .carta-platos{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+}
+#carta .carta-platos::after{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: 1.0s;
+
+}
+
+.carta-platos b{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    transition: 1.0s;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+#carta .carta-platos b{
+   opacity: 0;
+}
+#carta .carta-platos:hover b{
+    opacity: 1;
+    color: #FFFFFF;
+    bottom: 48%;
+}
+
+ #carta .carta-platos:hover::after{
+    background: #000000;
+}
+
+/*css servicios*/
+#servicios:hover{
+    box-shadow: 0 0 50px #000;
+    backdrop-filter: blur(50px);
+}
+
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 150px;
+}
+
+#servicios h2{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    display:inline-block;
+    margin-bottom: 80px;
+}
+
+#servicios h2{
+    font-size: 54px;
+}
+#servicios .carta-servicios{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+}
+#servicios .carta-servicios::after{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: 1.0s;
+
+}
+
+.carta-servicios b{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 9;
+    bottom: 50px;
+    top: 40%;
+    left: 40%;
+    right: 0;
+    text-align: left;
+    transition: 1.0s;
+    margin: 0 auto;
+    max-width: 250px;
+    font-size: 30px;
+}
+
+#servicios .carta-servicios b{
+   opacity: 0;
+}
+#servicios .carta-servicios:hover b{
+    opacity: 1;
+    color: #FFFFFF;
+    bottom: 48%;
+}
+
+ #servicios .carta-servicios:hover::after{
+    background: #000000;
+}
+
+/* Css Reseñas*/
+
+#reseñas{
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  margin-bottom: 150px;
+}
+
+
+#reseñas:hover{
+  box-shadow: 0 0 50px #000;
+  backdrop-filter: blur(10px);
+}
+
+#reseñas .p-left{
+  padding-left: 60px;
+}
+
+#reseñas h2{
+    font-size: 54px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#reseñas{
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.descripcion-reseña{
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: 'Baskervville', sans-serif;
+}
+
+.cescripcion-experiencias{
+  font-size: 15px;
+}
+
+.accordion-button{
+  font-size: 20px;
+}
+
+/* Css Eventos*/
+#Eventos .carousel-inner, .carousel-item img{
+  width: 642px;
+  height: 450px;
+}
+
+.carousel-eventos{
+  display: flex;
+  justify-content: end;
+}
+
+#Eventos:hover{
+  box-shadow: 0 0 50px #000;
+  backdrop-filter: blur(50px);
+}
+#Eventos{
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+#Eventos img{
+  width: 500px;
+  max-width: 100%;
+  display:block;
+  margin: 0 auto;
+}
+
+#Eventos h2{
+  color: #FFFFFF;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid #FFFFFF;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+#Eventos p{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Baskervville', sans-serif;
+}
+
+#Eventos a{
+  padding: 14px 40px;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700px;
+  text-decoration: none;
+  display:block;
+  max-width: 150px;
+  text-align: center;
+  transition: .5s;
+}
+
+#Eventos a:hover{
+  background: #000000;
+  border-radius: 20px;
+  max-width: 180px;
+} 
+
+#carouselHeroCaptions{
+  margin-top: 60px;
+}
+
+#carouselHeroCaptions h5{
+  padding: 10px;
+  border-radius: 8px;
+  background: #00000070; 
+}
+
+
+
+#Eventos{
+  margin-bottom: 150px;
+}
+
+
+.form-eventos{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/* Css Reviews*/
+#reviews{
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+  backdrop-filter: blur(50px);
+  margin-bottom: 150px;
+}
+
+.titulo-reseñas{
+  font-size: 54px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#reviews h2{
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0 50px;
+}
+
+/* Css contactos*/
+#contact{
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.form-label{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#contact h2{
+  color: #FFFFFF;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid #FFFFFF;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+#contact p{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Baskervville', sans-serif;
+}
+
+#contact:hover{
+  box-shadow: 0 0 50px #000;
+  backdrop-filter: blur(50px);
+}
+
+
+
+footer{
+  background: #000000;
+  color: #FFFFFF;
+  padding: 40px;
+  text-align: center;
+}
+
+.mapa, .events{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
